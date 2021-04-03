@@ -1,3 +1,5 @@
+echo "Installing samba and cifs-utils"
+sudo apt install samba cifs-utils;
 echo "Moving the default config to smb.conf.old"
 sudo mv /etc/samba/smb.conf.old;
 echo "Creating new smb.conf file"

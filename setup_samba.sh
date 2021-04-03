@@ -8,7 +8,7 @@ sudo echo "[NewShare]
         browseable = yes
         read only = no
         guest ok = no
-        valid users = user" > /etc/smb/smb.conf
+        valid users = user" > /etc/samba/smb.conf
 echo "Restarting service..."
 systemctl restart smbd;
 echo "Change SMB login password for user"

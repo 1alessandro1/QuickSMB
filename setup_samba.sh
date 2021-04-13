@@ -11,7 +11,6 @@ sudo echo "[NewShare]
         valid users = user" > /home/user/Desktop/smb.conf
 sudo mv /home/user/Desktop/smb.conf /etc/samba/smb.conf
 echo "Restarting service..." && systemctl restart smbd
-sleep 3;
 echo "Change SMB login password for user"
 sudo smbpasswd -a user;
 ifconfig | grep inet
